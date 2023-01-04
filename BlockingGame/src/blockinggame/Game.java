@@ -76,21 +76,7 @@ public class Game {
                 //leftEnemy.setEntityXPosition(leftEnemy.getxPosition()+1);
                 //System.out.println(leftEnemy.getxPosition());
                 //System.out.println(leftEnemy.getyPosition());
-                for (Projectile projectile : projectile) {
-                    switch (projectile.getDirection()) {
-                        case 0:
-                            projectile.setEntityYPosition(projectile.getyPosition() + projectile.getDy());
-                            break;
-                        case 1:
-                            projectile.setEntityXPosition(projectile.getxPosition() + projectile.getDx());
-                            break;
-                        case 2:
-                            projectile.setEntityXPosition(projectile.getxPosition() - projectile.getDx());
-                            break;
-                        default:
-                            break;
-                    }
-                }
+                moveProjectiles();
                 Projectile removed = null;
                 for (Projectile projectile1 : projectile) {
                     boolean hit = false;
@@ -112,6 +98,24 @@ public class Game {
                     
                 }
                 projectile.remove(removed);
+            }
+
+            private void moveProjectiles() {
+                for (Projectile projectile : projectile) {
+                    switch (projectile.getDirection()) {
+                        case 0:
+                            projectile.setEntityYPosition(projectile.getyPosition() + projectile.getDy());
+                            break;
+                        case 1:
+                            projectile.setEntityXPosition(projectile.getxPosition() + projectile.getDx());
+                            break;
+                        case 2:
+                            projectile.setEntityXPosition(projectile.getxPosition() - projectile.getDx());
+                            break;
+                        default:
+                            break;
+                    }
+                }
             }
         }.start();
 
