@@ -53,6 +53,10 @@ public class Game {
         createEntities();
         primaryStage.setTitle("Hello World!");
         primaryStage.setScene(scene);
+        primaryStage.toFront();
+        primaryStage.setResizable(false);
+        primaryStage.setMaximized(true);
+        primaryStage.setFullScreen(true);
         primaryStage.show();
         //GameLoop();
         scene.setOnKeyPressed((KeyEvent e) -> {
