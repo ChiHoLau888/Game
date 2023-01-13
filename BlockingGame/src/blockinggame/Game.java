@@ -331,7 +331,7 @@ public class Game {
     }
     
     /*
-    *Creates a countdown timer of 30 seconds
+    *Creates a timer
     */
     private void createTimerTimeline() {
         timerTimeline.setCycleCount(THIRTY);
