@@ -198,7 +198,7 @@ public class Game {
         root.getChildren().add(timeLabel);
         root.getChildren().add(player.getEntity());
         root.getChildren().add(floor.getEntity());
-        // Addes enemies from arraylist to scene
+        // Adds the enemies from the arraylist to the scene
         for (int i = 0; i < enemy.size(); i++) {
             root.getChildren().add(enemy.get(i).getEntity());
         }
