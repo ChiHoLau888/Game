@@ -329,7 +329,10 @@ public class Game {
 
                 }));
     }
-
+    
+    /*
+    *Creates a countdown timer of 30 seconds
+    */
     private void createTimerTimeline() {
         timerTimeline.setCycleCount(THIRTY);
         timerTimeline.getKeyFrames().add(new KeyFrame(Duration.seconds(1),
