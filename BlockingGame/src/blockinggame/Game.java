@@ -198,7 +198,7 @@ public class Game {
         root.getChildren().add(timeLabel);
         root.getChildren().add(player.getEntity());
         root.getChildren().add(floor.getEntity());
-        // Addes enemies from arraylist to scene
+        // Adds the enemies from the arraylist to the scene
         for (int i = 0; i < enemy.size(); i++) {
             root.getChildren().add(enemy.get(i).getEntity());
         }
@@ -329,7 +329,10 @@ public class Game {
 
                 }));
     }
-
+    
+    /*
+    *Creates a timer
+    */
     private void createTimerTimeline() {
         timerTimeline.setCycleCount(THIRTY);
         timerTimeline.getKeyFrames().add(new KeyFrame(Duration.seconds(1),
