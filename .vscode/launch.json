@@ -16,7 +16,7 @@
             "type": "java",
             "name": "Launch BlockingGame",
             "request": "launch",
-            "vmArgs": "--module-path /home/akanenthirarasa/Game/javafx-sdk-19/lib -add-modules javafx.controls.javafx.fxml.jar",
+            "vmArgs": "--module-path /ChiHoLau888/Game/blob/main/javafx-sdk-19/lib/javafx.fxml. -add-modules javafx.controls.javafx.fxml",
             "mainClass": "blockinggame.BlockingGame",
             "projectName": "Game_d48247e1"
         }
