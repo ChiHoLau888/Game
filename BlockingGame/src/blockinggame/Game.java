@@ -99,11 +99,15 @@ public class Game {
                     stop();
                     gameTimeline.stop();
                     timerTimeline.stop();
+                    AfterScreen afterScreen = new AfterScreen(SCREENWIDTH, SCREENHEIGHT, false, root, scene);
+                    afterScreen.endGame();
                 }
                 if (timeSeconds == 30) {
                     stop();
                     gameTimeline.stop();
                     timerTimeline.stop();
+                    AfterScreen afterScreen = new AfterScreen(SCREENWIDTH, SCREENHEIGHT, true, root, scene);
+                    afterScreen.endGame();
                 }
 
             }
