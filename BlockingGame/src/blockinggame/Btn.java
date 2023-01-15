@@ -12,7 +12,14 @@ import javafx.scene.control.Button;
  */
 public class Btn {
     
-    Button btn = new Button();
+    private Button btn = new Button();
+    public Button getBtn() {
+        return btn;
+    }
+
+    public void setBtn(Button btn) {
+        this.btn = btn;
+    }
 
     public Btn() {
         setcolour();
