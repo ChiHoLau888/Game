@@ -15,8 +15,10 @@ import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.paint.ImagePattern;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -68,7 +70,8 @@ public class Game {
         this.primaryStage = primaryStage;
 
         createEntities();
-
+        Image background = new Image("file:Images/Background.png") ;
+        scene.setFill(new ImagePattern(background));
         primaryStage.setTitle("Hello World!");
         primaryStage.setScene(scene);
         primaryStage.toFront();
@@ -201,7 +204,7 @@ public class Game {
         root.getChildren().add(livesLabel);
         root.getChildren().add(timeLabel);
         root.getChildren().add(player.getEntity());
-        root.getChildren().add(floor.getEntity());
+        //root.getChildren().add(floor.getEntity());
         // Adds the enemies from the arraylist to the scene
         for (int i = 0; i < enemy.size(); i++) {
             root.getChildren().add(enemy.get(i).getEntity());
