@@ -16,7 +16,7 @@ public class BlockingGame extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-        Game newGame = new Game(primaryStage);
+        new Game(primaryStage);
     }
 
     /**
