@@ -9,7 +9,10 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.Event;
 import javafx.event.EventHandler;
+import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
+import javafx.scene.paint.ImagePattern;
+
 import static javafx.scene.input.KeyCode.A;
 import static javafx.scene.input.KeyCode.D;
 import static javafx.scene.input.KeyCode.W;
@@ -86,7 +89,9 @@ public class Player extends EntityBase {
     public Player(int height, int length, int xPosition, int yPosition) {
         super(height, length, xPosition, yPosition);
         createBlockTimer();
-        
+        Image playerImg = new Image(BlockingGame.class.getResourceAsStream("BlockingGame/Player.png")) ;
+        Image playerImage = new Image(new FileInputStream("url for the image"));
+        super.getEntity().setFill(new ImagePattern(playerImg));
     }
 
     /*
