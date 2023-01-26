@@ -5,9 +5,6 @@
  */
 package blockinggame;
 
-import static blockinggame.Game.ENEMYSIZE;
-import static blockinggame.Game.SCREENHEIGHT;
-
 /**
  *
  * @author abina
