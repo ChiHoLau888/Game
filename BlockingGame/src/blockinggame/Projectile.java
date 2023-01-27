@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package blockinggame;
 
 /**
@@ -26,7 +21,7 @@ public class Projectile extends EntityBase {
 
 
     /*
-     * Returns value of projectiles speed in the x axis
+     * Returns the value of projectiles speed in the x axis
      */
     public int getDx() {
         return dx;
@@ -54,7 +49,7 @@ public class Projectile extends EntityBase {
     }
 
     /*
-     * Returns value of projectiles direction
+     * Returns the value of projectiles direction
      */
     public int getDirection() {
         return direction;
