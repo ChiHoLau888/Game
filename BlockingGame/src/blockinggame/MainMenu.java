@@ -54,7 +54,7 @@ public class MainMenu {
     }
 
     /*
-     * Sets layout for everything in menu
+     * Sets layout for everything in the main menu
      */
     private void setLayout() {
         btn1.setY(270);
@@ -126,7 +126,7 @@ public class MainMenu {
     }
 
     /*
-     * Sets layout for everything in menu
+     * Sets layout for everything in the main menu
      */
     private void setLayout() {
         btn1.setY(270);
