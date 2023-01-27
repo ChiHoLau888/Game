@@ -214,7 +214,7 @@ public class Game {
         timeLabel.setText("Time Remaining: " + 30);
         timeLabel.setLayoutX(SCREENWIDTH - 200);
         timeLabel.setLayoutY(15);
-        // Added to scene
+        // Added to the scene
         root.getChildren().add(livesLabel);
         root.getChildren().add(timeLabel);
         root.getChildren().add(player.getEntity());
@@ -578,7 +578,7 @@ public class Game {
         topEnemy = new Enemy(ENEMYSIZE, ENEMYSIZE, (SCREENWIDTH / 2) - (ENEMYSIZE / 2), 50);
         Image topEnemyImage = new Image("file:Images/Launcher Down.png");
         topEnemy.getEntity().setFill(new ImagePattern(topEnemyImage));
-        // Adds enemies to arraylist
+        // Adds enemies to the arraylist
         enemy.add(topEnemy);
         enemy.add(leftEnemy);
         enemy.add(rightEnemy);
