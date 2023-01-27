@@ -1,9 +1,3 @@
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package blockinggame;
 
 import java.util.ArrayList;
@@ -91,12 +85,7 @@ public class Game {
             player.setBlockingStatus(code);
 
         });
-        /*
-         * scene.setOnKeyReleased((KeyEvent e) -> {
-         * KeyCode code = e.getCode();
-         * 
-         * });
-         */
+      
         startGameLoop();
     }
 
@@ -186,7 +175,7 @@ public class Game {
     }
 
     /*
-     * Creates all main entities that will appear on screen
+     * Creates all main entities that will appear on the screen
      */
     private void createEntities() {
         // Main entities
@@ -218,7 +207,6 @@ public class Game {
         root.getChildren().add(livesLabel);
         root.getChildren().add(timeLabel);
         root.getChildren().add(player.getEntity());
-        // root.getChildren().add(floor.getEntity());
         // Adds the enemies from the arraylist to the scene
         for (int i = 0; i < enemy.size(); i++) {
             root.getChildren().add(enemy.get(i).getEntity());
@@ -375,11 +363,7 @@ public class Game {
     }
 }
 =======
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package blockinggame;
 
 import java.util.ArrayList;
@@ -467,12 +451,7 @@ public class Game {
             player.setBlockingStatus(code);
 
         });
-        /*
-         * scene.setOnKeyReleased((KeyEvent e) -> {
-         * KeyCode code = e.getCode();
-         * 
-         * });
-         */
+        
         startGameLoop();
     }
 
@@ -562,7 +541,7 @@ public class Game {
     }
 
     /*
-     * Creates all main entities that will appear on screen
+     * Creates all main entities that will appear on the screen
      */
     private void createEntities() {
         // Main entities
@@ -578,7 +557,7 @@ public class Game {
         topEnemy = new Enemy(ENEMYSIZE, ENEMYSIZE, (SCREENWIDTH / 2) - (ENEMYSIZE / 2), 50);
         Image topEnemyImage = new Image("file:Images/Launcher Down.png");
         topEnemy.getEntity().setFill(new ImagePattern(topEnemyImage));
-        // Adds enemies to arraylist
+        // Adds enemies to the arraylist
         enemy.add(topEnemy);
         enemy.add(leftEnemy);
         enemy.add(rightEnemy);
@@ -594,7 +573,6 @@ public class Game {
         root.getChildren().add(livesLabel);
         root.getChildren().add(timeLabel);
         root.getChildren().add(player.getEntity());
-        // root.getChildren().add(floor.getEntity());
         // Adds the enemies from the arraylist to the scene
         for (int i = 0; i < enemy.size(); i++) {
             root.getChildren().add(enemy.get(i).getEntity());
