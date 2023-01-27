@@ -72,7 +72,7 @@ public class Game {
         createEntities();
         Image background = new Image("file:Images/Background.png");
         scene.setFill(new ImagePattern(background));
-        primaryStage.setTitle("Hello World!");
+        primaryStage.setTitle("Blocking Game!");
         primaryStage.setScene(scene);
         primaryStage.toFront();
         primaryStage.setResizable(false);
