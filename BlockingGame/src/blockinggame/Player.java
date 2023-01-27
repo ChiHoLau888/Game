@@ -126,7 +126,10 @@ public class Player extends EntityBase {
                     }
                 }));
     }
-
+    
+    /*
+     * Stops the timer
+     */
     public void stopBlockTimer() {
         stopBlocking.stop();
     }
