@@ -4,8 +4,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
-
+        {
+            "type": "java",
+            "name": "Launch BlockingGame",
+            "request": "launch",
+            "mainClass": "blockinggame.BlockingGame",
+            "projectName": "Game_8e43e9de"
+        },
         {
             "type": "java",
             "name": "Launch Current File",
@@ -16,7 +21,7 @@
             "type": "java",
             "name": "Launch BlockingGame",
             "request": "launch",
-            "vmArgs": "--module-path /ChiHoLau888/Game/blob/main/javafx-sdk-19/lib/javafx.fxml. -add-modules javafx.controls.javafx.fxml",
+            "vmArgs": "--module-path C:/Users/lauch/Documents/GitHub/Game/javafx-sdk-19/lib -add-modules javafx.controls.javafx.fxml",
             "mainClass": "blockinggame.BlockingGame",
             "projectName": "Game_d48247e1"
         }

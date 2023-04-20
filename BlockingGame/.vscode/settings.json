@@ -8,6 +8,14 @@
         "/home/akanenthirarasa/javafx-sdk-19/lib/javafx.media.jar",
         "/home/akanenthirarasa/javafx-sdk-19/lib/javafx.swing.jar",
         "/home/akanenthirarasa/javafx-sdk-19/lib/javafx.web.jar",
-        "/home/akanenthirarasa/javafx-sdk-19/lib/javafx-swt.jar"
+        "/home/akanenthirarasa/javafx-sdk-19/lib/javafx-swt.jar",
+        "javafx-sdk-19/lib/javafx.base.jar",
+        "javafx-sdk-19/lib/javafx.controls.jar",
+        "javafx-sdk-19/lib/javafx.fxml.jar",
+        "javafx-sdk-19/lib/javafx.graphics.jar",
+        "javafx-sdk-19/lib/javafx.media.jar",
+        "javafx-sdk-19/lib/javafx.swing.jar",
+        "javafx-sdk-19/lib/javafx.web.jar",
+        "javafx-sdk-19/lib/javafx-swt.jar"
     ]
 }
